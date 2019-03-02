@@ -41,15 +41,19 @@ $(document).ready(function(){
     if (counter === targetNumber) {
       alert("You win!");
       wins++
-      
+      targetNumber = Math.floor(Math.random()*80);
+      $("#number-to-guess").text(targetNumber);
+      counter = 0;
+
 
     }
 
     else if (counter >= targetNumber) {
       alert("You lose!!");
       loses++
-      
-
+      targetNumber = Math.floor(Math.random()*80);
+      $("#number-to-guess").text(targetNumber);
+      counter = 0;
         
 
     }
