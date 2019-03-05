@@ -8,13 +8,20 @@ $(document).ready(function(){
   var increment = numberOptions[Math.round(Math.random())];
     $("#number-to-guess").text(targetNumber);
 
-    
+    var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/song/tetris.mp3");
+        $(".theme-button").on("click", function() {
+          audioElement.play();
+        });
+        $(".pause-button").on("click", function() {
+          audioElement.pause();
+        });
     for (var i = 0; i < numberOptions.length; i++) {
 
         // For each iteration, we will create an imageCrystal
         var imageCrystal = $("<img>");
     
-        
+        //adds class crystal-image
         imageCrystal.addClass("crystal-image");
     
         // Each imageCrystal will be given a src link to the crystal image
@@ -27,7 +34,7 @@ $(document).ready(function(){
         $("#crystals").append(imageCrystal);
       }
     $(".crystal-image").on("click", function() {
-
+        if (gamelock  !== true){
         // Clicking the button triggers an alert message.
         var crystalValue = ($(this).attr("data-crystalvalue"));
     crystalValue = parseInt(crystalValue);
@@ -57,6 +64,7 @@ $(document).ready(function(){
         
 
     }
+  }
 
     $("#wins").text(wins);
     $("#loses").text(loses);

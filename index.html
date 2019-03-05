@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/jquery/javascript.js"></script>
-<title>Crystal Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Crystal Game</title>
 
 </head>
+
 <body>
+    <div class="container">
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <strong>
+                    <h1>Crystal Game!
+                </strong></h1></strong>
+            </h1>
+            <hr>
+            <div id="musicControls" class="text-center">
+                <button class="btn btn-warning btn-xs theme-button">
+                    <span class="fa fa-music"></span> Play Theme!</button>
+                <button class="btn btn-dark btn-xs pause-button">
+                    <span class="fa fa-pause"></span> Pause Song</button>
+            </div>
+
+        </div>
         <h1>Number to Guess: <span id="number-to-guess"></span></h1>
 
         <!-- Note that this div is now empty. We will fill it dynamically -->
         <div id="crystals">
-                
-            </div>
-            <div>
-               <h3>Wins:<span id = "wins"></span></h3>
-                <h3>Loses:<span id = "loses"></span></h3>
-            </div>
+
         </div>
+        <div>
+            <h3>Wins:<span id="wins"></span></h3>
+            <h3>Loses:<span id="loses"></span></h3>
+        </div>
+    </div>
     
+
 </body>
+
 </html>
