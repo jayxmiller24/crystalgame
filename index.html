@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
     <script src="assets/jquery/javascript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystal Game</title>
 
 </head>
@@ -34,29 +35,46 @@
         </div>
         <h1>Number to Guess: <span id="number-to-guess"></span></h1>
 
-        
+
         <div class="row">
-            <div class= "col-sm-3 crystal-1 crystal-image">
+                
+            <div class="col-sm-2 crystal-1 crystal-image">
                 <img src="assets/images/images.jpeg" alt="crystal">
             </div>
-            <div class= "col-sm-3 crystal-2 crystal-image">
-                    <img src="assets/images/images.jpeg" alt="crystal">
-                </div>
-                <div class= "col-sm-3 crystal-3 crystal-image">
-                        <img src="assets/images/images.jpeg" alt="crystal">
-                    </div>
-                    <div class= "col-sm-3 crystal-4 crystal-image">
-                            <img src="assets/images/images.jpeg" alt="crystal">
-                        </div>
+            
+            <div class="col-sm-2 mr-4 crystal-2 crystal-image">
+                <img src="assets/images/images.jpeg" alt="crystal">
+            </div>
+            
+            <div class="col-sm-2 mr-4 crystal-3 crystal-image">
+                <img src="assets/images/images.jpeg" alt="crystal">
+            </div>
+           
+            <div class="col-sm-2 mr-4 crystal-4 crystal-image">
+                <img src="assets/images/images.jpeg" alt="crystal">
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+
+            
 
 
         </div>
         <div>
-            <h3>Wins:<span id="wins"></span></h3>
-            <h3>Loses:<span id="loses"></span></h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Wins:<span id="wins"></span></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Loses:<span id="loses"></span></h3>
+                </div>
+                <div class="col-sm-4">
+                        <h3>Counter:<span id="counter"></span></h3>
+                    </div>
+            </div>
         </div>
     </div>
-    
+
 
 </body>
 
